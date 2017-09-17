@@ -4,3 +4,79 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+$c-grey: #b3b3b3;
+$c-dark: #4a4a4a;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/images/cork-wallet.png');
+}
+
+@font-face {
+  font-family: "Monument Valley";
+  src: url("/fonts/Monument_Valley.otf");
+}
+
+.hero {
+  width: 100%;
+  // min-height: 25rem;
+  background: url('/images/crossword.png');
+  border-bottom: 0.1rem solid $c-grey;
+}
+
+.section {
+  padding: 3rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 65rem;
+}
+
+.title {
+  display: flex;
+  font-family: "Monument Valley", serif;
+  font-size: 1.5rem;
+  color: $c-grey;
+
+  > * + * {
+    margin-left: 1rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.logo {
+  width: 15rem;
+  height: 15rem;
+}
+
+.nav {
+  border-top: $c-grey 0.1rem solid;
+  padding: 0;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $c-grey;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: $c-dark;
+  }
+}
