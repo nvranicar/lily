@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background: url('/images/cork-wallet.png');
+  font-family: 'IM Fell Great Primer', serif;
 }
 
 @font-face {
@@ -78,5 +79,34 @@ body {
 
   &:hover {
     color: $c-dark;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  > * + * {
+    margin-top: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    > * + * {
+      margin-left: 1rem;
+    }
+
+    &__pic {
+      max-width: 20rem;
+      max-height: 20rem;
+      object-fit: contain;
+      border-radius: 0.3rem;
+    }
+
+    &__text {
+      color: $c-dark;
+      font-size: 1.3rem;
+      margin-top: 0;
+    }
   }
 }
