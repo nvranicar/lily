@@ -110,3 +110,12 @@ body {
     }
   }
 }
+
+.parallax {
+  background: url('/images/plant.png');
+  height: 10rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
