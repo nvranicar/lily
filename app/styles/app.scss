@@ -145,9 +145,33 @@ body {
   }
 }
 
-.grid-pic {
-  max-height: 20rem;
-  max-width: 20rem;
-  object-fit: contain;
-  border-radius: 0.1rem;
+.landscape {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
 }
+
+.landscape img {
+  width: auto;
+  height: 20rem;
+}
+
+.portrait {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.portrait img {
+  width: 20rem;
+  height: auto;
+}
+
+// .grid-pic {
+//   max-height: 20rem;
+//   max-width: 20rem;
+//   object-fit: contain;
+//   border-radius: 0.1rem;
+// }
