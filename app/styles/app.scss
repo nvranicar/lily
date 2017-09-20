@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(rgba($c-white, 0.7), rgba($c-white, 0.7)), url('/images/bridge.png') center;
+  background: linear-gradient(rgba($c-white, 0.7), rgba($c-white, 0.7)), url('/images/bricks.png') center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -59,6 +59,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
+}
+
+.subtitle {
+  margin: 0;
 }
 
 .logo {
