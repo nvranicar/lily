@@ -169,9 +169,8 @@ body {
   height: auto;
 }
 
-// .grid-pic {
-//   max-height: 20rem;
-//   max-width: 20rem;
-//   object-fit: contain;
-//   border-radius: 0.1rem;
-// }
+.rotate {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
