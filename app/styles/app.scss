@@ -7,6 +7,7 @@
 
 $c-grey: #b3b3b3;
 $c-dark: #4a4a4a;
+$c-white: #fafafa;
 
 body {
   margin: 0;
@@ -16,8 +17,8 @@ body {
 }
 
 @font-face {
-  font-family: "Monument Valley";
-  src: url("/fonts/Monument_Valley.otf");
+  font-family: "Typewriter";
+  src: url("/fonts/TravelingTypewriter.ttf");
 }
 
 .hero {
@@ -25,6 +26,12 @@ body {
   // min-height: 25rem;
   background: url('/images/crossword.png');
   border-bottom: 0.1rem solid $c-grey;
+}
+
+.header {
+  background: linear-gradient(rgba($c-white, 0.7), rgba($c-white, 0.7)), url('/images/bridge.png') center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section {
@@ -38,9 +45,10 @@ body {
 
 .title {
   display: flex;
-  font-family: "Monument Valley", serif;
-  font-size: 1.5rem;
-  color: $c-grey;
+  font-family: "Typewriter", serif;
+  font-size: 1.2rem;
+  color: $c-white;
+  text-shadow: 0 0 7px $c-dark;
 
   > * + * {
     margin-left: 1rem;
