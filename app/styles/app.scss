@@ -123,6 +123,7 @@ p {
       max-height: 20rem;
       object-fit: contain;
       border-radius: 0.3rem;
+      margin-top: 0;
     }
 
     &__text {
@@ -269,4 +270,8 @@ p {
   > * + * {
     margin-top: 2.5rem;
   }
+}
+
+.faq-answer {
+  margin-left: 1rem;
 }
