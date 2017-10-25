@@ -6,6 +6,7 @@
     <title>LI & LY interiors</title>
     <link rel="stylesheet" href="/app.css">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
 </head>
 
 <body>
@@ -46,21 +47,16 @@
             <p><strong>design@liandlyinteriors.com</strong></p>
             </div>
             <form class="contact__form" method="post" action="https://formspree.io/design@liandlyinteriors.com">
-                First Name
+                <input type="text" placeholder="First Name" name="firstName" class="name input">
                 <br>
-                <input type="text" name="firstName" class="name input">
                 <br>
-                Last Name
+                <input type="text" placeholder="Last Name" name="lastName" class="name input">
                 <br>
-                <input type="text" name="lastName" class="name input">
                 <br>
-                Your Email
+                <input type="text"  placeholder="Your Email" name="_replyto" class="mail input">
                 <br>
-                <input type="text" name="_replyto" class="mail input">
                 <br>
-                Comment
-                <br>
-                <textarea name="comment" rows="7" class="comment input"></textarea>
+                <textarea placeholder="Comment" name="comment" rows="7" class="comment input"></textarea>
                 <br>
                 <button type="submit" class="contact__form__button">Submit</button>
             </form>

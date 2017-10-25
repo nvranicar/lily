@@ -12,7 +12,7 @@ $c-white: #fafafa;
 body {
   margin: 0;
   padding: 0;
-  background: url('/images/cork-wallet.png');
+  background: url('/images/crossword.png');
   font-family: 'IM Fell Great Primer', serif;
   color: $c-dark;
 }
@@ -28,7 +28,20 @@ p {
 
 @font-face {
   font-family: "Typewriter";
-  src: url("/fonts/TravelingTypewriter.ttf");
+  src: url("/fonts/LUCKY_TYPEWRITER.ttf");
+}
+
+@font-face {
+  font-family: 'Harrington';
+  src: url('/fonts/HARRINGTON.ttf');
+}
+
+.li-ly {
+  font-family: 'Saira', 'sans-serif';
+}
+
+.amp {
+  font-family: 'Harrington', 'serif';
 }
 
 .hero {
@@ -58,10 +71,10 @@ p {
   font-family: "Typewriter", serif;
   font-size: 1.2rem;
   color: $c-white;
-  text-shadow: 0 0 7px $c-dark;
+  text-shadow: 0 0 0.1rem $c-dark;
 
   > * + * {
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
 
   &__text {
@@ -87,6 +100,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background: url('/images/old_moon.png');
+  // background: $c-grey;
 }
 
 .nav-items {
@@ -96,7 +111,10 @@ p {
 
 .nav-link {
   text-decoration: none;
-  color: $c-grey;
+  font-family: "Typewriter", serif;
+  color: $c-white;
+  text-shadow: 0 0 1px $c-dark;
+
   font-size: 1.5rem;
 
   &:hover {
@@ -179,6 +197,11 @@ p {
   height: auto;
 }
 
+.ladder {
+  top: 50%;
+  transform: translateY(-15%);
+}
+
 .rotate {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -196,7 +219,7 @@ p {
     width: 20rem;
 
     &__button {
-      background: url('/images/crossword.png');
+      background: $c-white;
       color: $c-dark;
       border: 0.1rem solid $c-grey;
       border-radius: 0.3rem;
@@ -230,7 +253,6 @@ p {
 }
 
 .page-heading {
-  font-style: italic;
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
