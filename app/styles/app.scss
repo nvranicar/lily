@@ -8,11 +8,14 @@
 $c-grey: #b3b3b3;
 $c-dark: #4a4a4a;
 $c-white: #fafafa;
+$c-darkishGrey: #919191;
+
 
 body {
   margin: 0;
   padding: 0;
-  background: url('/images/crossword.png');
+  // background: url('/images/crossword.png');
+  background: $c-white;
   font-family: 'IM Fell Great Primer', serif;
   color: $c-dark;
 }
@@ -69,9 +72,9 @@ p {
 .title {
   display: flex;
   font-family: "Typewriter", serif;
-  font-size: 1.2rem;
-  color: $c-white;
-  text-shadow: 0 0 0.1rem $c-dark;
+  font-size: 1rem;
+  color: $c-darkishGrey;
+  // text-shadow: 0 0 0.1rem $c-dark;
 
   > * + * {
     margin-left: 3rem;
@@ -100,8 +103,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: url('/images/old_moon.png');
-  // background: $c-grey;
+  // background: url('/images/old_moon.png');
+  background: $c-grey;
 }
 
 .nav-items {
