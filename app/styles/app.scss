@@ -107,6 +107,10 @@ p {
   background: $c-grey;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 .nav-items {
   display: flex;
   justify-content: space-around;
@@ -212,6 +216,12 @@ p {
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
+
+  > * + * {
+    margin-left: 2rem;
+  }
 
   > * + * {
     margin-top: 2rem;
@@ -299,4 +309,106 @@ p {
 
 .faq-answer {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+
+    > * + * {
+      margin-left: 0;
+    }
+
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-mobile {
+    display: flex;
+    font-family: "Typewriter", serif;
+    color: $c-white;
+    text-shadow: 0 0 1px $c-dark;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: $c-grey;
+
+    &__list {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+
+      > * {
+        padding: 0.5rem 0;
+        border-top: 0.05rem solid $c-dark;
+      }
+    }
+
+    &:hover > * + * {
+      display: flex;
+    }
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-family: "Typewriter", serif;
+    color: $c-white;
+    text-shadow: 0 0 1px $c-dark;
+    font-size: 1.2rem;
+    &:hover {
+      color: $c-dark;
+    }
+  }
+
+
+  .content__row__pic {
+    max-height: 10rem;
+    max-width: 10rem;
+  }
+
+  .landscape {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+  }
+
+  .landscape img {
+    width: auto;
+    height: 10rem;
+  }
+
+  .portrait {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+  }
+
+  .portrait img {
+    width: 10rem;
+    height: auto;
+  }
+
 }
