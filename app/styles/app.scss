@@ -223,10 +223,6 @@ p {
     margin-left: 2rem;
   }
 
-  > * + * {
-    margin-top: 2rem;
-  }
-
   &__form {
     font-size: 1.3rem;
     width: 20rem;
@@ -411,4 +407,28 @@ p {
     height: auto;
   }
 
+  .contact {
+    flex-direction: column;
+
+    > * + * {
+      margin-left: 0;
+    }
+
+    > * + * {
+      margin-top: 2rem;
+    }
+
+  }
+
+  .content__row {
+    flex-direction: column;
+
+    > * + * {
+      margin-left: 0;
+    }
+  }
+
+  .grid {
+    flex-direction: column;
+  }
 }
