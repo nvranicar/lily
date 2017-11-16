@@ -41,7 +41,13 @@ p {
 
 .li-ly {
   font-family: 'Saira', 'sans-serif';
+  font-size: 1.3rem;
 }
+
+.li-ly-title {
+  font-family: 'Saira', 'sans-serif';
+}
+
 
 .amp {
   font-family: 'Harrington', 'serif';
@@ -209,6 +215,25 @@ p {
   transform: translateY(-15%);
 }
 
+#mantle {
+  margin-top: -3.5rem;
+}
+
+#inspire {
+  margin-top: -2.1rem;
+}
+
+#vision {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+#contact-link {
+  color: $c-dark;
+  font-weight: 1000;
+}
+
 .rotate {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -226,6 +251,7 @@ p {
   &__form {
     font-size: 1.3rem;
     width: 20rem;
+    margin-top: 5rem;
 
     &__button {
       background: $c-white;
