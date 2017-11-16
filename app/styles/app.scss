@@ -58,6 +58,7 @@ p {
   // min-height: 25rem;
   background: url('/images/crossword.png');
   border-bottom: 0.1rem solid $c-grey;
+  position: relative;
 }
 
 .header {
@@ -114,6 +115,14 @@ p {
 }
 
 .nav-mobile {
+  display: none;
+}
+
+.dropdown-button {
+  margin: 0.5rem;
+}
+
+.dropdown-close {
   display: none;
 }
 
@@ -387,9 +396,25 @@ p {
       }
     }
 
-    &:hover > * + * {
-      display: flex;
+    &:hover {
+      .dropdown-button {
+        // display: none;
+      }
+
+      
+      > * + * {
+        display: flex;
+      }
     }
+  }
+  
+  .dropdown-close {
+    display: inline;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $c-dark;
+    position: absolute;
+    left: 10px;
   }
 
   .nav-link {
