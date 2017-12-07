@@ -429,6 +429,20 @@ p {
   font-family: 'Amiri', serif;
 }
 
+.web-credit {
+  text-align: center;
+  font-size: 0.8rem;
+
+  &__link {
+    color: $c-dark;
+    font-weight: bold;
+
+    &:hover {
+      color: #539473;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .title {
     flex-direction: column;
