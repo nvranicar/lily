@@ -252,10 +252,6 @@ p {
   transform: translateY(-15%);
 }
 
-#mantle {
-  margin-top: -3.5rem;
-}
-
 #inspire {
   margin-top: -2.1rem;
 }
@@ -443,7 +439,33 @@ p {
   }
 }
 
+.center {
+  margin: 4rem auto 2rem;
+}
+
+.mobile {
+  display: none;
+  margin: 0 auto 2rem;
+}
+
+.desktop {
+  display: block;
+}
+
+.mantle {
+  margin-top: -3.5rem
+}
+
+
 @media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   .title {
     flex-direction: column;
     text-align: center;
