@@ -235,6 +235,18 @@ p {
   height: 20rem;
 }
 
+.door-landscape {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.door-landscape img {
+  width: auto;
+  height: 20rem;
+}
+
 .portrait {
   width: 20rem;
   height: 20rem;
@@ -268,6 +280,12 @@ p {
 }
 
 .rotate {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.door-rotate {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -458,6 +476,13 @@ p {
 
 
 @media screen and (max-width: 600px) {
+  .door-rotate {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+
   .mobile {
     display: block;
   }
@@ -587,6 +612,18 @@ p {
   }
 
   .portrait img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .door-landscape {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+  }
+
+  .door-landscape img {
     width: 10rem;
     height: auto;
   }
